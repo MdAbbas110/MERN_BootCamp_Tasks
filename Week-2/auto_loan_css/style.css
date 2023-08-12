@@ -1,0 +1,38 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: roboto, sans-serif;
+}
+
+.table-box {
+    margin: 50px auto;
+}
+
+.table-box__row {
+    display: table;
+    width: 40%;
+    margin: 10px auto;
+    padding: 12px 0;
+    background-color: rgb(229, 204, 171);
+    font-size: 13px;
+}
+
+.table-box__cell {
+    display: table-cell;
+    width: 20%;
+    text-align: center;
+    padding: 4px 0;
+    
+    vertical-align: center;
+}
+
+.table-head {
+    background-color: #00b3b3;
+    color: aliceblue;
+    font-size: 12px;
+    font-weight: 600;
+    padding: 4px;
+    width: 20%;
+    text-align: center;
+    margin-left: 6.8rem;
+}
