@@ -1,6 +1,6 @@
 :root {
-    --theme-color: #7395AE;
-    --theme-dark-color: #557A95;
+    --theme-color: #47abee;
+    --theme-dark-color: #4c98cf;
     --primary-font-color: #5D5C61;
     --link-font-color: white;
  }
@@ -34,6 +34,7 @@
  nav ul {
     list-style-type: none;
     padding: 10px 0;
+    gap: 2rem;
  }
  
  nav li {
@@ -57,7 +58,18 @@
  main {
     margin: 0;
  }
+
+ .row {
+    display: flex;
+    border: 1px solid black;
+ }
  
+ @media (min-width: 1480px) {
+ .container {
+    max-width: 1480px;
+ }
+}
+
  main > section {
     margin-top: 30px;
  }
@@ -69,10 +81,17 @@
  .benefits-inner-container {
     display: flex;
     flex-direction: row;
+    
  }
  
  .benefit {
     color: var(--theme-dark-color);
     margin-left: 10px;
     margin-right: 20px;
+    
+ }
+
+ .img-text {
+    display: flex;
+    gap: 2rem;
  }
