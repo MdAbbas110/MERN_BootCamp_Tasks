@@ -1,14 +1,18 @@
 function playGuessingGame(numToGuess, totalGuesses = 10) {
     let guessCount = 0
 
-    
     for (let attempt = 0 ; attempt <= totalGuesses ; attempt++ ) {
         let userGuess = prompt('Enter a number form 1 to 100')
+        if (userGuess === numToGuess) {
+            guessCount = 0
+            return alert('correct')
+        } else {
+
+        }
 
         if(userGuess === null || userGuess === "") {
             return 0;
         }
-
         if (isNaN(userGuess)) {
             continue
         }
@@ -30,5 +34,5 @@ function playGuessingGame(numToGuess, totalGuesses = 10) {
     return guessCount
 }
 
-const play = playGuessingGame(12,10)
+const play = playGuessingGame(12,5)
 console.log(play);
