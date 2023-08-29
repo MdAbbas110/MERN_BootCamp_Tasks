@@ -1,22 +1,25 @@
-function isStrongPassword(password) {
-    if (password.length < 8 ){
-        return false 
-    }
-    if (password.includes('password')) {
-        return false
-    }
-    let hasUppercase = false 
-    for (let char of password) {
-        if(char === char.toUpperCase() && char !== char.toLowerCase()){
-            hasUppercase = true
-            break
-        }
-    }
-    if (!hasUppercase) {
-        return false 
-    }
-   return true
-}
+function isStrongPassword(ps){
 
-let pass = 'wee'
-isStrongPassword(pass)
+    if(ps.length < 8){
+      console.log(`Too short is StrongPassword ${ps}`);
+      return false;
+    }
+  
+  
+    if(ps.includes("password")){
+      console.log("Contains password" );
+      return false;
+    }
+  
+  
+    if(!/[A-Z]/.test(ps)){
+      console.log("No uppercase characters");
+      return false;
+    }
+  
+    console.log("strong passsword");
+    return true;
+    
+  }
+  
+  isStrongPassword("Qwerty123");
