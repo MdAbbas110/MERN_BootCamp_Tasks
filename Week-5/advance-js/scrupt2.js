@@ -23,3 +23,10 @@ function createTemperatureCache() {
     }
   };
 }
+
+const temperature = createTemperatureCache()
+
+console.time();
+const temp = temperature('tokyo')
+console.log(temp);
+console.timeEnd()
