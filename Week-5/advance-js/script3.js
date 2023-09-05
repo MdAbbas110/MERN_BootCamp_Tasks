@@ -9,3 +9,6 @@ function generateTransactionId (){
 
     return unique
 }
+
+const bio = generateTransactionId()
+console.log(bio);
