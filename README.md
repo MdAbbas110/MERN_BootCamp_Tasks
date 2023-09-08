@@ -1,7 +1,7 @@
 # Pesto Assignments
 
-Welcome to Pesto assignments.
-
+in this repository im pussing the daily challenges and assignments that i got in the course
+There are all the typs of Questions on Html semantic Css and javascript mosty that are been commit daily 
 
 ## How to solve assignments
 
