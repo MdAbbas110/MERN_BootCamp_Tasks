@@ -9,12 +9,17 @@ const BookList = () => {
     <div>
       {books.map((book, index) => {
         return (
-          <div key={index} style={{ border: '1px solid white' }}>
-            <ul>
-              <li>{book.title}</li>
-              <li>{book.author}</li>
-              <li>{book.year}</li>
-            </ul>
+          <div
+            key={index}
+            style={{
+              border: '1px solid white',
+              margin: '15px',
+              padding: '10px',
+            }}
+          >
+            <h1>{book.title}</h1>
+            <p>{book.author}</p>
+            <p>{book.year}</p>
           </div>
         );
       })}
